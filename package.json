@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky",
+    "pre:commit": "lint-staged"
   },
   "dependencies": {
     "@emotion/react": "^11.13.0",
@@ -27,5 +29,10 @@
     "husky": "^9.1.4",
     "lint-staged": "^15.2.7",
     "typescript": "^5"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "npm run lint"
+    ]
   }
 }
