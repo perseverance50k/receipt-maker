@@ -2,6 +2,9 @@ import "@fontsource/poppins";
 
 import { FC, PropsWithChildren } from "react";
 import type { Metadata } from "next";
+import { ThemeProvider } from "@mui/material";
+
+import { theme } from "@/theme";
 
 export const metadata: Metadata = {
   title: "Receipt Maker",
@@ -13,7 +16,9 @@ export interface RootLayoutProps extends PropsWithChildren {}
 const RootLayout: FC<RootLayoutProps> = ({ children }) => {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <ThemeProvider theme={theme}>
+        <body>{children}</body>
+      </ThemeProvider>
     </html>
   );
 };
