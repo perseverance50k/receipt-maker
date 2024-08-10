@@ -6,7 +6,7 @@ import '@fontsource/poppins';
 
 import { ThemeProvider } from '@mui/material';
 
-import { theme } from '@/theme';
+import { theme } from '@theme';
 
 export const metadata: Metadata = {
   title: 'Receipt Maker',
