@@ -8,6 +8,8 @@ import { ThemeProvider } from '@mui/material';
 
 import { theme } from '@theme';
 
+import './globals.css';
+
 export const metadata: Metadata = {
   title: 'Receipt Maker',
   description: 'Online custom receipt generator for your business!',
