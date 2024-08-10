@@ -9,6 +9,7 @@
     "lint": "next lint",
     "prepare": "husky",
     "pre:commit": "lint-staged && npm run format",
+    "pre:push": "npm run build",
     "format": "prettier --write \"src/**/*.ts(x)\""
   },
   "dependencies": {
