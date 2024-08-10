@@ -4,10 +4,6 @@ import type { Metadata } from 'next';
 
 import '@fontsource/poppins';
 
-import { ThemeProvider } from '@mui/material';
-
-import { theme } from '@theme';
-
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -20,9 +16,7 @@ export interface RootLayoutProps extends PropsWithChildren {}
 const RootLayout: FC<RootLayoutProps> = ({ children }) => {
   return (
     <html lang="en">
-      <ThemeProvider theme={theme}>
-        <body>{children}</body>
-      </ThemeProvider>
+      <body>{children}</body>
     </html>
   );
 };
