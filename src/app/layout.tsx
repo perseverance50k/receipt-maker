@@ -1,14 +1,16 @@
-import "@fontsource/poppins";
+import { FC, PropsWithChildren } from 'react';
 
-import { FC, PropsWithChildren } from "react";
-import type { Metadata } from "next";
-import { ThemeProvider } from "@mui/material";
+import type { Metadata } from 'next';
 
-import { theme } from "@/theme";
+import '@fontsource/poppins';
+
+import { ThemeProvider } from '@mui/material';
+
+import { theme } from '@/theme';
 
 export const metadata: Metadata = {
-  title: "Receipt Maker",
-  description: "Online custom receipt generator for your business!",
+  title: 'Receipt Maker',
+  description: 'Online custom receipt generator for your business!',
 };
 
 export interface RootLayoutProps extends PropsWithChildren {}
