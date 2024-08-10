@@ -1,11 +1,9 @@
 import { NextPage } from 'next';
 
-const HomePage: NextPage = () => {
-  return (
-    <main>
-      <div>Hello from Receipt Maker!</div>
-    </main>
-  );
+import { WelcomePage as WelcomePageUI } from '@pages';
+
+const WelcomePage: NextPage = () => {
+  return <WelcomePageUI />;
 };
 
-export default HomePage;
+export default WelcomePage;
