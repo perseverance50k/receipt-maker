@@ -2,6 +2,7 @@ import { FC, PropsWithChildren } from 'react';
 
 import type { Metadata } from 'next';
 
+import '@fontsource/inter';
 import '@fontsource/poppins';
 
 import './globals.css';
