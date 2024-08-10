@@ -5,7 +5,7 @@ import type { Metadata } from 'next';
 import '@fontsource/inter';
 import '@fontsource/poppins';
 
-import './globals.css';
+import '@styles/globals.css';
 
 export const metadata: Metadata = {
   title: 'Receipt Maker',
