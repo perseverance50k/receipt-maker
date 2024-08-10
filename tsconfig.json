@@ -21,10 +21,10 @@
       "@/*": ["./src/*"],
       "@app": ["./src/app"],
       "@app/*": ["./src/app/*"],
-      "@pages": ["./src/pages"],
-      "@pages/*": ["./src/pages/*"],
-      "@components": ["./src/components"],
-      "@components/*": ["./src/components/*"],
+      "@pages": ["./src/ui/pages"],
+      "@pages/*": ["./src/ui/pages/*"],
+      "@components": ["./src/ui/components"],
+      "@components/*": ["./src/ui/components/*"],
       "@styles": ["./src/styles"],
       "@styles/*": ["./src/styles/*"]
     }
