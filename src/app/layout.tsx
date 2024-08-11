@@ -5,6 +5,7 @@ import type { Metadata } from 'next';
 import '@fontsource/inter';
 import '@fontsource/poppins';
 
+import { Navbar } from '@components';
 import '@styles/globals.css';
 
 export const metadata: Metadata = {
@@ -21,7 +22,10 @@ const RootLayout: FC<RootLayoutProps> = ({ children }) => {
         name="viewport"
         content="width=device-width, initial-scale=1.0"
       ></meta>
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        <div className="pt-[64px] lg:pt-0">{children}</div>
+      </body>
     </html>
   );
 };
