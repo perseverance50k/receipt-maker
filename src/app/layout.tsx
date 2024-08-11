@@ -18,10 +18,8 @@ export interface RootLayoutProps extends PropsWithChildren {}
 const RootLayout: FC<RootLayoutProps> = ({ children }) => {
   return (
     <html lang="en">
-      <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-      ></meta>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="icon" href="/static/receipt.svg" />
       <body>
         <Navbar />
         <div className="pt-[64px] lg:pt-0">{children}</div>
