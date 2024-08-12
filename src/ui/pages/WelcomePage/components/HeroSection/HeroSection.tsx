@@ -1,6 +1,7 @@
 import { FC } from 'react';
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 import WOMAN_RECEIPT_IMAGE from '@public/woman-receipt.svg';
 
@@ -18,7 +19,7 @@ export const HeroSection: FC = () => {
           </h3>
         </div>
         <button className="btn bg-orange-600 hover:bg-orange-700 btn-md text-white sm:btn-lg">
-          <a href="/templates">Explore templates</a>
+          <Link href="/templates">Explore templates</Link>
         </button>
       </div>
       <div className="flex items-center justify-center w-1/2 xl:w-1/3">

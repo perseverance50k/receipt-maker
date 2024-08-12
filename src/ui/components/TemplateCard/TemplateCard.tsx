@@ -1,6 +1,7 @@
 import { FC } from 'react';
 
 import Image, { StaticImageData } from 'next/image';
+import Link from 'next/link';
 
 export interface TemplateCardProps {
   title: string;
@@ -17,7 +18,7 @@ export const TemplateCard: FC<TemplateCardProps> = ({
 }) => {
   return (
     <div className="card bg-base-100 w-full shadow-lg md:w-[350px] lg:w-96">
-      <div className="card-body">
+      <div className="card-body p-6">
         <h2 className="card-title text-lg font-semibold lg:text-xl lg:font-bold">
           {title}
         </h2>
@@ -26,10 +27,10 @@ export const TemplateCard: FC<TemplateCardProps> = ({
             <Image src={image} width="280" alt="template-card-image" />
           </div>
         )}
-        <p>{description}</p>
+        <p className="text-md lg:text-lg">{description}</p>
         <div className="card-actions justify-end">
           <button className="btn w-full bg-orange-600 hover:bg-orange-700 text-white md:w-24">
-            <a href={url}>Use</a>
+            <Link href={url}>Use</Link>
           </button>
         </div>
       </div>

@@ -1,5 +1,7 @@
 import { TemplateCard } from '@components';
-import RECEIPT_TEMPLATE_IMAGE from '@public/receipt-template-image.jpg';
+import RECEIPT_IMAGE_1 from '@public/receipt1.jpg';
+import RECEIPT_IMAGE_2 from '@public/receipt2.jpg';
+import RECEIPT_IMAGE_3 from '@public/receipt3.jpg';
 
 export const TemplatesSection = () => {
   return (
@@ -13,25 +15,19 @@ export const TemplatesSection = () => {
             title="Receipt #1"
             description="Neat and minimalistic receipt template."
             url="/some-url"
-            image={RECEIPT_TEMPLATE_IMAGE}
+            image={RECEIPT_IMAGE_1}
           />
           <TemplateCard
             title="Receipt #2"
             description="Awesome receipt for e-commerce shops."
             url="/some-url"
-            image={RECEIPT_TEMPLATE_IMAGE}
+            image={RECEIPT_IMAGE_2}
           />
           <TemplateCard
             title="Receipt #3"
             description="Colorful receipt template."
             url="/some-url"
-            image={RECEIPT_TEMPLATE_IMAGE}
-          />
-          <TemplateCard
-            title="Receipt #4"
-            description="Neat and minimalistic receipt template."
-            url="/some-url"
-            image={RECEIPT_TEMPLATE_IMAGE}
+            image={RECEIPT_IMAGE_3}
           />
         </div>
       </div>
