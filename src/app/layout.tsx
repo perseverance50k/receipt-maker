@@ -2,8 +2,27 @@ import { FC, PropsWithChildren } from 'react';
 
 import type { Metadata } from 'next';
 
-import '@fontsource/inter';
-import '@fontsource/poppins';
+// We need to explicitly import every font weight in order to be able to use them.
+// The import like '@fontsource/inter' defaults to weight 400 (based on docs)
+// Docs: https://www.npmjs.com/package/@fontsource/inter
+import '@fontsource/inter/100.css';
+import '@fontsource/inter/200.css';
+import '@fontsource/inter/300.css';
+import '@fontsource/inter/400.css';
+import '@fontsource/inter/500.css';
+import '@fontsource/inter/600.css';
+import '@fontsource/inter/700.css';
+import '@fontsource/inter/800.css';
+import '@fontsource/inter/900.css';
+import '@fontsource/poppins/100.css';
+import '@fontsource/poppins/200.css';
+import '@fontsource/poppins/300.css';
+import '@fontsource/poppins/400.css';
+import '@fontsource/poppins/500.css';
+import '@fontsource/poppins/600.css';
+import '@fontsource/poppins/700.css';
+import '@fontsource/poppins/800.css';
+import '@fontsource/poppins/900.css';
 
 import { Navbar } from '@components';
 import '@styles/globals.css';
@@ -22,7 +41,9 @@ const RootLayout: FC<RootLayoutProps> = ({ children }) => {
       <link rel="icon" href="/static/receipt.svg" />
       <body>
         <Navbar />
-        <div className="pt-[64px] lg:pt-0">{children}</div>
+        <div className="flex flex-col items-center pt-[64px]">
+          <div className="w-full max-w-screen-2xl">{children}</div>
+        </div>
       </body>
     </html>
   );
