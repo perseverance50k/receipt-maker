@@ -18,9 +18,11 @@ export const HeroSection: FC = () => {
             businesses and entrepreneurs needing a fast, easy solution.
           </h3>
         </div>
-        <button className="btn bg-orange-600 hover:bg-orange-700 btn-md text-white sm:btn-lg">
-          <Link href="/templates">Explore templates</Link>
-        </button>
+        <Link href="/templates">
+          <button className="btn bg-orange-600 hover:bg-orange-700 btn-md text-white sm:btn-lg">
+            Explore templates
+          </button>
+        </Link>
       </div>
       <div className="flex items-center justify-center w-1/2 xl:w-1/3">
         <div className="w-5/6">

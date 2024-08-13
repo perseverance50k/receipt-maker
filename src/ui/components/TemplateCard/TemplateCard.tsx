@@ -29,9 +29,11 @@ export const TemplateCard: FC<TemplateCardProps> = ({
         )}
         <p className="text-md lg:text-lg">{description}</p>
         <div className="card-actions justify-end">
-          <button className="btn w-full bg-orange-600 hover:bg-orange-700 text-white md:w-24">
-            <Link href={url}>Use</Link>
-          </button>
+          <Link href={url} className="w-full md:w-auto">
+            <button className="btn w-full bg-orange-600 hover:bg-orange-700 text-white md:w-24">
+              Use
+            </button>
+          </Link>
         </div>
       </div>
     </div>
