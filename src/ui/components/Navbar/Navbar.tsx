@@ -6,7 +6,7 @@ import { DesktopHorizontalMenu, MobileDropdownMenu } from './components';
 
 export const Navbar: FC = () => {
   return (
-    <div className="navbar bg-base-100 z-10 absolute">
+    <div className="navbar bg-base-100 z-10 fixed top-0 left-0">
       <div className="flex-1">
         <Link className="btn btn-ghost text-lg font-inter font-bold" href="/">
           Receipt Maker
