@@ -36,7 +36,7 @@ export interface RootLayoutProps extends PropsWithChildren {}
 
 const RootLayout: FC<RootLayoutProps> = ({ children }) => {
   return (
-    <html lang="en">
+    <html lang="en" data-theme="light">
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="icon" href="/static/receipt.svg" />
       <body>
